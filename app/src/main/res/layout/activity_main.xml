@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_main_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="跳转到其他AAR项目的页面"/>
+
+    <TextView
+        android:id="@+id/activity_main_resulttextview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:text="返回结果："/>
+
+</LinearLayout>
