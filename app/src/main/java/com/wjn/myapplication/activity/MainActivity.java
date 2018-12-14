@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.wjn.myapplication.R;
 
 import createsdkdemo.wjn.com.mylibrary.activity.OtherActivity;
@@ -32,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUESTCODE);
             }
         });
+
+        ImageView imageView=findViewById(R.id.activity_main_imageview);
+        String url="http://cn.bing.com/az/hprichbg/rb/Dongdaemun_ZH-CN10736487148_1920x1080.jpg";
+        Glide.with(this)
+                .load(url)
+                .into(imageView);
+
     }
 
     /**
